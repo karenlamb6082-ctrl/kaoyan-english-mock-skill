@@ -1,0 +1,4 @@
+interface:
+  display_name: "考研英语一仿真命题与审核"
+  short_description: "系统命制、生态去重、难度校准并质检英语一仿真卷与答案解析"
+  default_prompt: "使用 $kaoyan-english-mock 先审核主题生态与命题矩阵，再生成或优化考研英语一仿真卷。"
