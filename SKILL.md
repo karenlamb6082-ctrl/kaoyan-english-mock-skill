@@ -54,7 +54,7 @@ Apply these full-paper constraints:
 - Vary opening modes and paragraph rhythms. Do not let all four texts use five neat policy-essay paragraphs.
 - Audit Cloze, Part B, Translation, and both Writing tasks against Reading Part A. A full paper can still be repetitive even when its four main readings are not.
 
-For a new paper following Mock 04, read [references/mock-01-04-ecology.md](references/mock-01-04-ecology.md) before choosing topics. Use its cooling table and Mock 05 blueprint. After completing each later paper, update the historical ledger and replace the next-paper state.
+Before choosing topics for the next paper, read [references/mock-01-06-ecology.md](references/mock-01-06-ecology.md). Use its historical ledger and current cooling state. After completing each later paper, update the reference filename, historical ledger, and next-paper state.
 
 ## Content Rules
 
@@ -67,6 +67,7 @@ For a new paper following Mock 04, read [references/mock-01-04-ecology.md](refer
 - Format answer options as a table-like list with `[A] [B] [C] [D]`, not crowded inline text.
 - Across 20 items, aim for about 7 lexical distinctions, 4 collocations, 4 logical links, 3 syntax/grammar items, and 2 discourse-cohesion items.
 - Require 5-6 items to use evidence beyond the sentence containing the blank.
+- Randomize option positions only after the lexical sets are final, but do not force exact A/B/C/D balance. Reject repeated four- or five-item blocks, fixed-interval letters, rotating duplicates, or any other periodic answer pattern that a test taker could use.
 
 ### Reading Part A
 
@@ -123,6 +124,7 @@ Do not improve one category by starving another. A paper like Mock 01 with 10 di
 Correct answers should be restrained paraphrases of the text. Distractors should use common traps: swapped subject, exaggerated degree, reversed attitude, false causality, true-but-irrelevant detail, or common-sense bait not supported by the text.
 
 - Do not make every question map neatly to one paragraph.
+- Reject two items in the same text when they test substantially the same evidence and paraphrase chain, even if their stems use different wording. Adjacent attitude, main-idea, and function items must not all reduce to the same conclusion.
 - Include cross-paragraph inference, example/function, semantic and attitude questions.
 - Keep all four options in the same semantic field and similar in plausibility and length.
 - Prefer distractors that are partly supported but fail at the boundary: `may` becomes `will`, a qualified claim becomes a general rule, a cause becomes an effect, or a balance between two values is recast as support for one side.
@@ -134,6 +136,7 @@ Correct answers should be restrained paraphrases of the text. Distractors should
 - Give every question at least one plausible distractor and at least 8 questions a genuinely strong distractor.
 - Record each wrong option's mechanism in the authoring key: scope expansion, degree shift, swapped subject, reversed causality, locally true but irrelevant, unsupported inference, or concept substitution.
 - Avoid relying on obvious absolutes such as `always`, `only`, `completely`, or `impossible` to make distractors wrong.
+- When a stem asks for a strategy, view, or example that is `mentioned`, make clear whether the target is merely reported, endorsed, criticized, or constrained. Do not let a criticized alternative become defensible merely because it appears in the passage.
 - For each item, record the strongest distractor separately and state the single boundary that makes it wrong.
 - Make wrong options as linguistically restrained as the correct option. `The most cautious option` must not become a reliable test-taking shortcut.
 - Reject an option set when the correct answer is the only institutional, nuanced, or qualified statement in the group.
@@ -217,6 +220,8 @@ Before finalizing, make the PDF look like a real printed paper:
 - first-line indent every English body paragraph by about 2 characters; do not indent directions, questions, options, headings, or tables
 - avoid orphan answer keys, split answer/explanation pairs, half-empty pages caused by forced page breaks, and clipped chart elements
 - use a real table for study schedules; never expose Markdown pipes or separators in the PDF
+- After rendering, remove a forced page break when it leaves the preceding page with only a few lines and the next section can flow naturally without confusing the exam hierarchy.
+- In custom writing visuals, keep legends inside a clearly separated area, fit labels within their boxes, and check the final printed size rather than the drawing coordinates alone.
 
 If WPS or another app locks an old PDF, save the corrected paper under a new final filename and tell the user which old file could not be deleted.
 
@@ -289,33 +294,22 @@ Do not finalize immediately after generation.
 
 For blind review, record the reviewer's selected answer, confidence, and second choice. Rewrite any item that produces a high-confidence disagreement or two defensible answers. Resolve the dispute from source evidence and scope boundaries, never from `what the author meant to ask`.
 
+After a revision prompted by blind review, run a fresh focused blind check on the changed items and on any answer-sequence pattern. A matching key from the first reviewer is not enough when the first review identified redundancy, periodicity, or a weak option boundary.
+
 The target is a medium-hard stage mock whose difficulty comes from evidence, inference and fine discrimination, not obscure knowledge, excessive length, rare vocabulary, or deliberately tangled prose.
 
-## Next Paper State: Mock 05
+## Next Paper State: Mock 07
 
-Mock 04 completed person/viewpoint matching and used Text 2 as the designated hardest article. For the next full paper, apply these paper-specific choices, then replace this section after completion:
+Mock 06 completed paragraph ordering and used Text 3 as the designated hardest article. Read the historical reference before designing Mock 07, then replace this section after completion:
 
-- Use this Reading Part A matrix:
-
-| Text | Domain | Topic | Core conflict | Difficulty |
-|---|---|---|---|---|
-| Text 1 | social/consumer institutions | cashless venues and payment choice | transaction convenience vs choice and system resilience | 2 easy + 3 medium |
-| Text 2 | environment/science | assisted migration under climate change | ecological caution vs the risk of inaction | 1 easy + 3 medium + 1 hard |
-| Text 3 | culture/history | reconstructing historic buildings after disaster | material authenticity vs communal memory and cultural continuity | 1 easy + 3 medium + 1 hard |
-| Text 4 | economic institutions/technology markets | interoperability rules for digital platforms | integrated experience and security vs exit freedom and competition | 1 easy + 1 medium + 3 hard |
-
-- Use exactly 5 detail, 7 inference, 2 attitude, 2 main-idea, and 4 function items across these texts.
-- Make Text 4 the main discriminator and require at least three applied, functional, or cross-paragraph boundary questions.
-- Use information matching for Part B: five skilled-trade workers discussing apprenticeship mentoring, with seven candidate statements and two extras that are locally plausible but wrong in ownership, scope, or argumentative role.
-- Use a Cloze passage about why maps require deliberate distortion. Avoid libraries, AI, and generic public-governance prose.
-- Use a Translation passage about how standardized time changed railways, commerce, and daily life. Keep five demanding sentences in a complete 350-450-word passage.
-- Use a Part A Writing task in which a campus film-screening venue is cancelled and the writer must explain the change, propose an alternative, and request confirmation.
-- Use a Part B Writing picture-plus-chart about sports facilities that appear fully booked but remain physically empty, followed by improved use after wait-list and cancellation reminders. Require observable behavior, causes such as low-cost reservation and scarcity anxiety, and individual plus institutional remedies.
-- Preserve the stronger boundary-based distractor rule from Mock 04, but avoid creating near-synonym cloze options that remain equally grammatical and contextually defensible.
-- Apply a full cooling period to AI ethics, AI medicine, AI education, precision medicine, age-friendly design, urban lighting/tree/public-space design, data governance, average-metric bias, museum restitution, and museum labels as primary topics.
-- Do not use AI, medicine, or `human responsibility remains central` as the main topic or conflict in Cloze, Reading, Translation, or Writing. If AI returns in a later paper, wait at least two full papers and change the actors, mechanism, stakes, and conclusion—not merely the application field.
-- Keep Translation syntactically demanding, especially through abstract subjects, parenthetical insertions, and clauses that require Chinese reordering rather than rare vocabulary.
-- Keep the Part B Writing visual on the same page as its directions. If vertical space is tight, redesign the visual's internal geometry instead of uniformly shrinking its labels below print-readable size.
+- Cool voice messages, long-term field-station funding, bankruptcy fresh starts, literary-dialect translation, smell-linked memory, aviation checklists, fermentation knowledge, and parental substitution at recruitment fairs.
+- Rotate Part B away from paragraph ordering and information/person matching. Prefer sentence insertion or headings, and preserve the two-clue rule.
+- Do not predetermine the hardest text from the previous two papers. Select it after source and conflict review, then require at least three genuinely integrative items.
+- Preserve the 5/7/2/2/4 question matrix and 5/10/5 difficulty curve unless real student data justify a change.
+- Keep at least one directional stance and one unresolved tension, but change the opening rhythm and conclusion pattern used in Mock 06.
+- Audit within-text question diversity as strictly as cross-paper theme diversity. Do not let two easy items reuse one evidence chain or let three closing items restate one thesis.
+- Do not force answer-letter equality in Cloze or Reading. Reject periodic blocks even when no letter repeats four times.
+- Give Writing Part B a new observable social mechanism, not protection turning into substitution, resource booking, self-discipline, AI choice, or packaging/recycling.
 
 ## File Hygiene
 
