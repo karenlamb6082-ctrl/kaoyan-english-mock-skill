@@ -1,6 +1,6 @@
-# Mock 01-04 Ecology Ledger
+# Mock 01-06 Ecology Ledger
 
-Read this reference before designing Mock 05 or when auditing theme diversity, conflict repetition, difficulty, item mix, or writing overlap in the current series.
+Read this reference before designing Mock 06 or when auditing theme diversity, conflict repetition, difficulty, item mix, or writing overlap in the current series.
 
 ## Overall Finding
 
@@ -97,7 +97,7 @@ Cool effort, persistence, planning, self-discipline, and AI as central Part B Wr
 2. Increasing difficulty has sometimes meant increasing abstraction instead of evidence distance.
 3. Review proves that correct options work but does not yet prove that every wrong option is competitive and uniquely wrong.
 
-## Mock 05 Blueprint
+## Mock 05 Completed Record
 
 | Text | Domain | Topic | Conflict | Difficulty |
 |---|---|---|---|---|
@@ -117,3 +117,59 @@ Use this full-paper state:
 - Part B Writing: fully booked but physically unused sports facilities; improved use after wait-list and cancellation reminders.
 
 For Writing Part B, require the observable contradiction, causes such as low-cost reservation and scarcity anxiety, and both individual cancellation responsibility and institutional wait-list/reminder design.
+
+Mock 05 was completed with this blueprint unchanged. Final content checks recorded:
+
+- Cloze: 283 words.
+- Reading Part A: 386, 415, 427, and 426 words; 1,654 total.
+- Part B: 433 words, information matching, answers A/D/B/C/E.
+- Translation: 356 words with five distributed underlined portions.
+- Reading item mix: 5 detail, 7 inference, 2 attitude, 2 main-idea, 4 function.
+- Predicted difficulty: 5 easy, 10 medium, 5 hard.
+- Final layout: 11-page test and 7-page answer book.
+
+Reusable lessons from final layout review:
+
+1. A forced break after Part B initially stranded the end of Question 45; allowing Translation to flow naturally removed the half-empty page without weakening section hierarchy.
+2. A forced break before calibration initially left the continuation of the writing analysis alone; removing it filled the final answer page cleanly.
+3. Writing-chart legends placed at the bottom collided visually with group labels. Put legends above or beside the plot and center short labels inside narrow diagram boxes.
+4. Validate selected answer text after collapsing extracted PDF whitespace, because line wrapping can otherwise create false mismatch reports.
+
+## Mock 06 Completed Record
+
+| Text | Domain | Topic | Conflict | Difficulty |
+|---|---|---|---|---|
+| 1 | social communication | voice-message etiquette | expressive richness and sender convenience vs the receiver's control of time and medium | 2 easy + 3 medium |
+| 2 | scientific institutions | long-term field-station support | short-cycle novelty incentives vs continuity required for cumulative knowledge | 1 easy + 3 medium + 1 hard |
+| 3 | economic/legal institutions | bankruptcy fresh starts | creditor certainty vs bounded restoration of productive capacity | 1 easy + 1 medium + 3 hard |
+| 4 | culture/language | translating literary dialect | readability vs preservation of social voice without false equivalence | 1 easy + 3 medium + 1 hard |
+
+Full-paper state:
+
+- Cloze: smell-linked place memory and reconstruction.
+- Part B: paragraph ordering on the development and social function of aviation checklists; order A-D-B-E-G-C-F.
+- Translation: fermentation as place-based practical and microbial knowledge.
+- Part A Writing: correct a printed forum schedule error and obtain the guest speaker's confirmation.
+- Part B Writing: a parent speaks to a recruiter for an adult student; protective involvement becomes substitution.
+
+Final checks recorded:
+
+- Cloze: 316 words.
+- Reading Part A: 410, 380, 428, and 429 words; 1,647 total.
+- Part B: 431 words, paragraph ordering, answers D/B/G/C/F.
+- Translation: 409 words with five distributed underlined portions.
+- Reading item mix: 5 detail, 7 inference, 2 attitude, 2 main-idea, 4 function.
+- Predicted difficulty: 5 easy, 10 medium, 5 hard.
+- Final layout: 9-page test and 6-page answer book.
+- Three blind-review passes: the first found repeated evidence chains, a boundary defect in Q33, repeated thesis testing in Q38-40, and an artificial Cloze key; the second confirmed the reading revisions but found a remaining periodic Cloze pattern and ambiguity in a `mentioned strategy` stem; the final focused check found no exploitable answer pattern and unique answers for Q24, Q33, and Q36.
+
+Reusable lessons:
+
+1. Correct-answer uniqueness does not prevent two questions from being redundant. Audit evidence chains within each five-question set.
+2. A mathematically balanced key can expose stronger artificial patterns than a simple repeated-letter run. Inspect fixed intervals and blocks after randomization.
+3. A stem asking what is `mentioned` can accidentally validate a criticized alternative. Specify the relevant boundary in the stem.
+4. If a final-page table or Cloze row spills alone, reduce row padding before changing font size. Start Part C on a new page when its heading and directions would otherwise be stranded.
+
+## Mock 07 Cooling State
+
+Do not reuse the Mock 06 primary topics or supporting sections: voice messages, long-term field-station funding, bankruptcy fresh starts, literary-dialect translation, smell-linked memory, aviation checklists, fermentation knowledge, schedule-correction email, or parental substitution at recruitment fairs. Rotate Part B away from paragraph ordering and information/person matching. Do not preassign the hardest text before source review. Continue to avoid conflict templates that reduce every issue to formal rules plus stakeholder governance.
