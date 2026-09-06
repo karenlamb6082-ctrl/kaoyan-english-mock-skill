@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.1",
+  "rules_version": "1.1.0",
+  "series_id": "new-user-series",
+  "next_paper": 1,
+  "history": [],
+  "cooling": {
+    "topics": [],
+    "mechanisms": [],
+    "part_b_recent_forms": [],
+    "next_writing_family": "picture",
+    "notes": "新用户可在首轮指定图画或数据；以后按覆盖策略轮换。",
+    "policy": "轮换按最近最少使用，不永久排除题型。"
+  },
+  "quality_debt": [],
+  "empirical": {
+    "status": "none",
+    "records": []
+  },
+  "pending_rule_changes": []
+}

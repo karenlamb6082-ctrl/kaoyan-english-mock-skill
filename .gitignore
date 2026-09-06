@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.env
+.env.*
+my-work/
+my-print/
+output/
+state/CURRENT_STATE.json
+state/OWNER_SERIES_STATE.json
+*.pdf
+*.zip

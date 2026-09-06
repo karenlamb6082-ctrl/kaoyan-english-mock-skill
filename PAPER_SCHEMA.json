@@ -1,0 +1,894 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "English I portable paper v1.1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "meta",
+    "sources",
+    "cloze",
+    "readings",
+    "part_b",
+    "translation",
+    "writing_a",
+    "writing_b",
+    "authoring",
+    "release"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.1"
+    },
+    "meta": {
+      "type": "object",
+      "required": [
+        "series_id",
+        "number",
+        "revision",
+        "title",
+        "example_only"
+      ],
+      "properties": {
+        "series_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "number": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "revision": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "example_only": {
+          "type": "boolean"
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/source"
+      }
+    },
+    "cloze": {
+      "$ref": "#/$defs/sourceSection"
+    },
+    "readings": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "source_ids",
+          "voice_anchor_source_id",
+          "domain",
+          "voice",
+          "conflict",
+          "paragraphs",
+          "questions"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4
+          },
+          "source_ids": {
+            "$ref": "#/$defs/sourceIds"
+          },
+          "voice_anchor_source_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "domain": {
+            "type": "string",
+            "minLength": 1
+          },
+          "voice": {
+            "type": "string",
+            "minLength": 1
+          },
+          "conflict": {
+            "type": "string",
+            "minLength": 1
+          },
+          "paragraphs": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "questions": {
+            "type": "array",
+            "minItems": 5,
+            "maxItems": 5,
+            "items": {
+              "$ref": "#/$defs/readingQuestion"
+            }
+          }
+        }
+      }
+    },
+    "part_b": {
+      "type": "object",
+      "properties": {
+        "form": {
+          "type": "string",
+          "enum": [
+            "headings",
+            "matching",
+            "insertion",
+            "ordering"
+          ]
+        },
+        "directions": {
+          "type": "string",
+          "minLength": 1
+        },
+        "display_mode": {
+          "type": "string",
+          "enum": [
+            "inline",
+            "prompts"
+          ]
+        },
+        "body": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "choices": {
+          "type": "object",
+          "minProperties": 5,
+          "additionalProperties": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "prompt": {
+                "type": "string"
+              },
+              "answer": {
+                "type": "string",
+                "minLength": 1
+              },
+              "answer_text": {
+                "type": "string",
+                "minLength": 1
+              },
+              "evidence": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "prompt",
+              "answer",
+              "answer_text",
+              "evidence"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 5,
+          "maxItems": 5
+        },
+        "source_ids": {
+          "$ref": "#/$defs/sourceIds"
+        },
+        "voice_anchor_source_id": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "form",
+        "directions",
+        "display_mode",
+        "body",
+        "choices",
+        "items",
+        "source_ids",
+        "voice_anchor_source_id"
+      ],
+      "additionalProperties": false
+    },
+    "translation": {
+      "type": "object",
+      "properties": {
+        "paragraphs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "text": {
+                "type": "string",
+                "minLength": 1
+              },
+              "answer": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "text",
+              "answer"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 5,
+          "maxItems": 5
+        },
+        "source_ids": {
+          "$ref": "#/$defs/sourceIds"
+        },
+        "voice_anchor_source_id": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "paragraphs",
+        "items",
+        "source_ids",
+        "voice_anchor_source_id"
+      ],
+      "additionalProperties": false
+    },
+    "writing_a": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "const": 51
+        },
+        "prompt": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sample": {
+          "type": "string",
+          "minLength": 1
+        },
+        "notes": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "prompt",
+        "sample",
+        "notes"
+      ],
+      "additionalProperties": false
+    },
+    "writing_b": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "const": 52
+        },
+        "prompt": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sample": {
+          "type": "string",
+          "minLength": 1
+        },
+        "notes": {
+          "type": "string",
+          "minLength": 1
+        },
+        "visual": {
+          "type": "object",
+          "properties": {
+            "family": {
+              "type": "string",
+              "enum": [
+                "picture",
+                "data"
+              ]
+            },
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "caption": {
+              "type": "string",
+              "minLength": 1
+            },
+            "relation": {
+              "type": "string",
+              "minLength": 1
+            },
+            "charts": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/chart"
+              },
+              "minItems": 0
+            }
+          },
+          "required": [
+            "family",
+            "path",
+            "caption",
+            "relation",
+            "charts"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "id",
+        "prompt",
+        "sample",
+        "notes",
+        "visual"
+      ],
+      "additionalProperties": false
+    },
+    "authoring": {
+      "type": "object",
+      "required": [
+        "steelman",
+        "claim_ledger",
+        "ecosystem",
+        "exceptions"
+      ],
+      "properties": {
+        "steelman": {
+          "type": "object",
+          "required": [
+            "support",
+            "oppose",
+            "decisive_variables"
+          ],
+          "properties": {
+            "support": {
+              "type": "string",
+              "minLength": 1
+            },
+            "oppose": {
+              "type": "string",
+              "minLength": 1
+            },
+            "decisive_variables": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "claim_ledger": {
+          "type": "array"
+        },
+        "ecosystem": {
+          "type": "array"
+        },
+        "exceptions": {
+          "type": "array"
+        }
+      }
+    },
+    "release": {
+      "type": "object",
+      "required": [
+        "stage",
+        "revision",
+        "gates",
+        "known_limitations"
+      ],
+      "properties": {
+        "stage": {
+          "enum": [
+            "DRAFT",
+            "STRUCTURE_CHECKED",
+            "SEMANTICALLY_REVIEWED",
+            "SOURCE_VERIFIED",
+            "VISUALLY_REVIEWED",
+            "PILOT_READY",
+            "EMPIRICALLY_REVIEWED"
+          ]
+        },
+        "revision": {
+          "type": "string",
+          "minLength": 1
+        },
+        "gates": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/gate"
+          }
+        },
+        "known_limitations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "sourceIds": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "sourceSection": {
+      "type": "object",
+      "required": [
+        "source_ids",
+        "voice_anchor_source_id",
+        "text",
+        "questions"
+      ],
+      "properties": {
+        "source_ids": {
+          "$ref": "#/$defs/sourceIds"
+        },
+        "voice_anchor_source_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "questions": {
+          "type": "array",
+          "minItems": 20,
+          "maxItems": 20,
+          "items": {
+            "$ref": "#/$defs/clozeQuestion"
+          }
+        }
+      }
+    },
+    "options": {
+      "type": "object",
+      "required": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "properties": {
+        "A": {
+          "type": "string",
+          "minLength": 1
+        },
+        "B": {
+          "type": "string",
+          "minLength": 1
+        },
+        "C": {
+          "type": "string",
+          "minLength": 1
+        },
+        "D": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "commonQuestion": {
+      "type": "object",
+      "required": [
+        "id",
+        "options",
+        "answer",
+        "answer_text",
+        "evidence",
+        "secondary_operation",
+        "evidence_span",
+        "difficulty",
+        "strongest_distractor",
+        "strongest_distractor_case",
+        "decisive_boundary",
+        "traps"
+      ],
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "options": {
+          "$ref": "#/$defs/options"
+        },
+        "answer": {
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        },
+        "answer_text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence": {
+          "type": "string",
+          "minLength": 1
+        },
+        "secondary_operation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_span": {
+          "type": "string",
+          "minLength": 1
+        },
+        "difficulty": {
+          "enum": [
+            "predicted_easy",
+            "predicted_medium",
+            "predicted_hard"
+          ]
+        },
+        "strongest_distractor": {
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        },
+        "strongest_distractor_case": {
+          "type": "string",
+          "minLength": 1
+        },
+        "decisive_boundary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "traps": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 4,
+          "maxItems": 4
+        }
+      }
+    },
+    "clozeQuestion": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/commonQuestion"
+        },
+        {
+          "type": "object",
+          "required": [
+            "construct",
+            "substitution_review"
+          ],
+          "properties": {
+            "construct": {
+              "enum": [
+                "lexical",
+                "collocation_preposition",
+                "logical_link",
+                "syntax_grammar",
+                "discourse_cohesion"
+              ]
+            },
+            "substitution_review": {
+              "type": "object",
+              "required": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "properties": {
+                "A": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "B": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "C": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "D": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "readingQuestion": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/commonQuestion"
+        },
+        {
+          "type": "object",
+          "required": [
+            "stem",
+            "primary_type"
+          ],
+          "properties": {
+            "stem": {
+              "type": "string",
+              "minLength": 1
+            },
+            "primary_type": {
+              "enum": [
+                "detail",
+                "inference",
+                "function",
+                "meaning",
+                "main_idea",
+                "attitude"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "publisher",
+        "date",
+        "accessed",
+        "url",
+        "verification",
+        "voice",
+        "retained",
+        "omitted",
+        "adaptation_boundary",
+        "rights_note"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "publisher": {
+          "type": "string",
+          "minLength": 1
+        },
+        "author": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "date": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "accessed": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "minLength": 1
+        },
+        "verification": {
+          "enum": [
+            "unverified",
+            "metadata_checked",
+            "content_checked",
+            "archived_snapshot",
+            "user_provided"
+          ]
+        },
+        "voice": {
+          "type": "string",
+          "minLength": 1
+        },
+        "retained": {
+          "type": "string",
+          "minLength": 1
+        },
+        "omitted": {
+          "type": "string",
+          "minLength": 1
+        },
+        "adaptation_boundary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "rights_note": {
+          "type": "string",
+          "minLength": 1
+        },
+        "snapshot_hash": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "gate": {
+      "type": "object",
+      "required": [
+        "name",
+        "status",
+        "reviewer",
+        "independence",
+        "timestamp",
+        "evidence"
+      ],
+      "properties": {
+        "name": {
+          "enum": [
+            "structure",
+            "semantic",
+            "source",
+            "visual",
+            "candidate"
+          ]
+        },
+        "status": {
+          "enum": [
+            "not_run",
+            "pass",
+            "fail"
+          ]
+        },
+        "reviewer": {
+          "type": "string"
+        },
+        "independence": {
+          "enum": [
+            "independent",
+            "fresh_context",
+            "not_independent",
+            "not_applicable"
+          ]
+        },
+        "timestamp": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "evidence": {
+          "type": "string"
+        },
+        "key_visible": {
+          "type": "boolean"
+        },
+        "reviewed_revision": {
+          "type": "string"
+        }
+      }
+    },
+    "chart": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sample_size": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "denominator": {
+          "type": "string",
+          "minLength": 1
+        },
+        "period": {
+          "type": "string",
+          "minLength": 1
+        },
+        "unit": {
+          "type": "string",
+          "enum": [
+            "percent",
+            "count",
+            "other"
+          ]
+        },
+        "multiple_choice": {
+          "type": "boolean"
+        },
+        "rounding_tolerance": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "values": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "value": {
+                "type": "number",
+                "minimum": 0
+              }
+            },
+            "required": [
+              "label",
+              "value"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 1,
+          "maxItems": 12
+        }
+      },
+      "required": [
+        "title",
+        "sample_size",
+        "denominator",
+        "period",
+        "unit",
+        "multiple_choice",
+        "rounding_tolerance",
+        "values"
+      ],
+      "additionalProperties": false
+    }
+  }
+}
